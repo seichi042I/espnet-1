@@ -154,6 +154,7 @@ class Trainer:
         ngpu: int = 0,
         strict: bool = True,
     ):
+        logging.info(f"The training was resumed using {checkpoint}")
         states = torch.load(
             checkpoint,
             map_location=f"cuda:{torch.cuda.current_device()}" if ngpu > 0 else "cpu",

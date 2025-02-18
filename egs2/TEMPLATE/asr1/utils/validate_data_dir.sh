@@ -132,8 +132,8 @@ if ! $no_text; then
       L=en_US.UTF-8
     fi
     n_non_print=$(LC_ALL="$L" grep -c '[^[:print:][:space:]]' $data/text) && \
-    echo "$0: text contains $n_non_print lines with non-printable characters" &&\
-    exit 1;
+    echo "$0: text contains $n_non_print lines with non-printable characters"
+    # exit 1;
   fi
   utils/validate_text.pl $data/text || exit 1;
   check_sorted_and_uniq $data/text

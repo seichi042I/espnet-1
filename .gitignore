@@ -102,3 +102,7 @@ tools/ffmpeg-*-static
 tools/ffmpeg-release
 tools/ffmpeg-release-*.tar.xz
 tools/Miniconda3-latest-*.sh
+
+data_root
+egs2/IRISIA
+egs2/mycoe
